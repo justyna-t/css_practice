@@ -1,0 +1,30 @@
+.beginning {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  outline: 2px solid red;
+
+  max-height: 60.0vh;
+
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.introduction {
+  flex: 2 2 20em;
+}
+
+.navigation {
+  flex: 1 1 20em;
+}
+
+.beginning-content {
+  font-size: 3.0vh;
+  text-align: center;
+}

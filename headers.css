@@ -1,0 +1,63 @@
+/*header for web title*/
+h1 {
+  font-family: Verdena;
+  font-weight: bold;
+  color: #cc00cc;
+  font-size: 10.0vh;
+  text-shadow: 7px 5px #e6ccff;
+}
+
+/* header for sections*/
+h2 {
+  color: #993366;
+  font-weight: bold;
+  font-family: monospace;
+  text-shadow: 2px 2px #bf4080;
+  margin: 2px;
+  text-align: center;
+  font-size: 6.0vh;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/*header for subsections*/
+h3 {
+  color: #df9fbf;
+  font-weight: bold;
+  font-family: monospace;
+  text-shadow: 2px 2px #993366;
+  margin: 2px;
+  text-align: center;
+  font-size: 4.0vh;
+  margin-bottom: 10px;
+}
+
+/*header for sections in navigation*/
+h4 {
+  color: #993366;
+  font-weight: bold;
+  font-family: monospace;
+  text-shadow: 2px 2px #bf4080;
+  margin: 2px;
+  text-align: center;
+  font-size: 3.0vh;
+}
+
+/*header for subsections in navigation*/
+h5 {
+  color: #df9fbf;
+  font-weight: bold;
+  font-family: monospace;
+  text-shadow: 1px 1px #993366;
+  margin: 2px;
+  text-align: center;
+  font-size: 2.0vh;
+}
+
+/*header for lists*/
+h6 {
+  list-style-position: inside;
+  font-size: 3.0vh;
+  font-weight: bold;
+  margin: 0;
+}

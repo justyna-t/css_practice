@@ -1,0 +1,40 @@
+.flex {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+
+  max-height: 90.0vh;
+
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.flex_item {
+  flex: 1 1 20em;
+  font-size: 3.0vh;
+  align-self: center;
+}
+
+.components-image {
+  border-radius: 8px;
+  border: 2px solid #cc00cc;
+  width: 70.0vh;
+  padding: 5px;
+}
+
+.attributes-image {
+  border-radius: 8px;
+  border: 2px solid #cc00cc;
+  width: 58.0vh;
+  padding: 5px;
+}
+
+.html-structure-image {
+  width: 80.0vh;
+}

@@ -1,0 +1,49 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.section {
+  text-align: center;
+  border-color: #ffe6f0;
+  border-style: solid;
+  border-width: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.subsection {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.from-author {
+  background-color: #993366;
+  color: white;
+}
+
+p {
+  font-size: 3.0vh;
+  text-align: center;
+}
+
+ol li {
+  list-style-position: inside;
+  font-size: 3.0vh;
+}
+
+ul {
+  margin-top: 0;
+  list-style-type: square;
+}
+
+ul li{
+  list-style-position: inside;
+  font-size: 3.0vh;
+}
+
+span.pink {
+  color: DeepPink;
+}

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="notes_styles.css">
+    <link rel="stylesheet" href="title.css">
+    <link rel="stylesheet" href="beginning.css">
+    <link rel="stylesheet" href="headers.css">
+    <link rel="stylesheet" href="flex.css">
+    <link rel="stylesheet" href="definition_lists.css">
+    <link rel="stylesheet" href="links.css">
+    <link rel="stylesheet" href="image_with_caption.css">
+    <title>NOTES - Justyna Tekieli</title>
+  </head>
+  <body>
+    <div class="title title-container" id="top">
+      <h1>WEB</h1>
+      <h1>HTML</h1>
+      <h1>CSS</h1>
+    </div>
+    <div class="beginning">
+      <div class="introduction">
+        <h2>Introduction</h2>
+        <h3>the Web</h3>
+        <p class="beginning-content">
+          In this section will be introduction to the Web. We're going to cover
+          how the web works. Learn about browser and the Internet. Also get
+          familiar what are components of the Web and learn a definitions
+          related to this topic.
+        <h3>HTML and CSS</h3>
+        <p class="beginning-content">
+          In this section will be introduction to HTML and CSS. HTML and CSS
+          are both "languages". The document written in HTML defines the
+          structure and content of the page. CSS controls the "style" of a page
+          (how it looks).
+        </p>
+      </div>
+      <div class="navigation">
+        <h2>On this page:</h2>
+        <h4><a href="#web">Information about the Web</a></h4>
+        <h5><a href="#basics">* Basics of the Web</a></h5>
+        <h5><a href="#components">* Components of the Web</a></h5>
+        <h5><a href="#definitions">* Definitions of the Web</a></h5>
+        <h4><a href="#html_info">Information about HTML</a></h4>
+        <h5><a href="#html">* What is HTML?</a></h5>
+        <h5><a href="#html_elements">* HTML elements</a></h5>
+        <h5><a href="#html_attributes">* HTML attributes</a></h5>
+        <h5><a href="#html_structure">* HTML page structure</a></h5>
+        <h4><a href="#css">Information about CSS</a></h4>
+        <h5><a href="#css-intro">* Introduction to CSS</a></h5>
+        <h5><a href="#css-understanding">* Understanding CSS</a></h5>
+        <h5><a href="#css-use">* How to use CSS?</a></h5>
+        <h5><a href="#css-vocabulary">* CSS vocabulary</a></h5>
+        <h5><a href="#box-sizing">* Box sizing</a></h5>
+        <h5><a href="#box-positioning">* Box positioning</a></h5>
+        <h5><a href="#veryfying">* Verifying HTML and CSS</a></h5>
+      </div>
+    </div>
+    <div class="section">
+      <h2 id="web">Information about the Web</h2>
+      <div class="subsection">
+        <h3 id="basics">Basics of the Web</h3>
+          <ul>
+            <li>The web<br></li>
+            <li>HTML</li>
+            <li>URLs</li>
+            <li>HTTP</li>
+            <li>Web Applications</li>
+          </ul>
+        <h3 id="components">Components of the Web</h3>
+        <div class="flex">
+          <div class="flex_item text">
+            <p>Browser make requests via Internet to servers. Servers are
+              computers which hosting files. A protocol called HTTP is uses by
+              browser to comunnicate with these servers. Servers respond with
+              files that the browser displays.<br>Examples of browsers: Chrome,
+              Internet Explorer, Firefox.
+            </p>
+          </div>
+          <div class="flex_item">
+            <img src="images/components.png" alt="web_components"
+              class="components-image">
+            <ol type="A">
+              <li>Browser<br></li>
+              <li>Internet</li>
+              <li>HTTP</li>
+              <li>Servers</li>
+            </ol>
+          </div>
+       </div>
+        <h3 id="definitions">Definitions of the Web</h3>
+        <dl class="box">
+          <dt>HTTP</dt>
+          <dd>the main protocol of the web</dd>
+          <dt>Servers</dt>
+          <dd>computers that host the files that make up the web</dd>
+          <dt>Internet</dt>
+          <dd>the world's largest computer network</dd>
+          <dt>Browser</dt>
+          <dd>a program that runs on my computer to display files found on the
+            web</dd>
+          <dt>URLs</dt>
+          <dd>how I refere to documents on the web</dd>
+          <dt>WWW</dt>
+          <dd>World Wide Web, a collection of HTML documents</dd>
+          <dt>Hyperlinks</dt>
+          <dd>links between pages</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="section">
+      <h2 id="html_info">Information about HTML</h2>
+      <div class="subsection">
+        <h3 id="html">What is HTML?</h3>
+        <p> HTML stands for HyperText Markup Language. HTML is the language
+          used o create webpages. HTML is a main document type of the web,
+          basic for <ins>almost</ins> every web page. HyperText Markup Language
+          have specific syntax and rules and tells a browser how to display
+          content on a web page.
+        </p>
+        <h6>HTML is made up of:</h6>
+        <ul>
+          <li>text content (what I see)</li>
+          <li>markup (what it looks like)</li>
+          <li>references to other documents (eg. videos, images)</li>
+          <li>links to other pages</li>
+        </ul>
+        <h3 id="html_elements">HTML elements</h3>
+          <p>We use HTML elements to tell a browser how to display content on a
+            web page.</p>
+          <p>Most HTML elements looks like:<br>
+            opening tag + tag contents + closing tag = element (tag)<br>
+            &lt;<b>NAME</b>&gt;Contents&lt;<b>/NAME</b>&gt;
+          </p>
+          <p>We can divide HTML elements into inline elements and block
+            elements.</p>
+          <h6>Inline elements:</h6>
+          <ul>
+            <li>&lt;b&gt;content&lt;/b&gt; Makes content <b>bold</b></li>
+            <li>&lt;em&gt;content&lt;/em&gt; Makes content <em>italic</em></li>
+            <li>&lt;img&gt; Adds image</li>
+            <li>&lt;a&gt;link&lt;/a&gt; Used to make a link</li>
+            <li>&lt;br&gt; Creates a break line.</li>
+            <li>&lt;span&gt;text&lt;/span&gt; Provides no visual change by
+              itself (need to use attributes).</li>
+            <li>&lt;strong&gt;text&lt;/strong&gt; Defines important text.</li>
+          </ul>
+          <h6>Block elements:</h6>
+          <ul>
+            <li>&lt;p&gt;text&lt;/p&gt; Defines a paragraph.</li>
+            <li>&lt;div&gt;&lt;/div&gt; Defines a division/ a section in an
+              HTML document.</li>
+            <li>&lt;form&gt;&lt;/form&gt; Used to create an HTML form for user
+              input.</li>
+          </ul>
+          <h3 id="html_attributes">HTML attributes</h3>
+          <div class="flex">
+            <div class="flex_item text">
+              <p><b>&lt;TAG attribute="value"&gt;</b>content<b>&lt;/TAG&gt;</b>
+              </p>
+              <p>Some HTML elements accept additional values called attributes
+                in their opening tags. Attributes provide additional
+                information to the browser.
+              </p>
+              <h6>Examples:</h6>
+              <dl>
+                <dt><span class="pink">&lt;a href="url"&gt;link&lt;/a&gt;
+                </span></dt>
+                <dd>Creates a hyperlink to the <span class="pink">href </span>
+                  attribute value <span class="pink">url</span> and names it
+                  <a href="https://www.youtube.com/watch?v=-0S9lBFHeo0">link
+                  </a>.
+                </dd>
+                <dt><span class="pink">&lt;img src="url" alt="text"&gt;
+                  </span></dt>
+                <dd>Displays the image hosted at the <span class="pink">src
+                  </span> attribute value "url". The <span class="pink">alt
+                  </span> attribute value "text" will be shown when the image
+                  cannot be displayed. Value "url" can also be a path to local
+                  file on my computer.
+                </dd>
+              </dl>
+            </div>
+            <div class="flex_item">
+              <img src="http://www.zielonyogrodek.pl/images/media2/1037tulipan__tomasz.JPG"
+              alt="tulip" class="attributes-image">
+            </div>
+          </div>
+          <h3 id="html_structure">HTML page structure</h3>
+          <div class="flex">
+            <div class="flex_item text">
+              <p><span class="pink">&lt;!DOCTYPE html&gt;</span> defines the
+                type of document, on the top of page, before any <span
+                class="pink">&lt;html&gt;</span> tags, helps browser to display
+                web page correctly.
+              </p>
+              <p><span class="pink">&lt;html&gt;</span> opens our document.</p>
+              <p>
+                <span class="pink">&lt;/html&gt;</span> closes our document.
+              </p>
+              <p><span class="pink">&lt;head&gt; &lt;/head&gt;</span> defines
+                METADATA for web page.</p>
+              <p>Inside <span class="pink">&lt;head&gt; &lt;/head&gt;</span> we
+                have <span class="pink">&lt;title&gt;Title!&lt;/title&gt;
+                </span>. If "title" is short it will be closed on the same
+                line.
+              </p>
+              <p>visible part of HTML document is between <span class="pink">
+                &lt;body&gt; and &lt;/body&gt;</span>.</p>
+              <p>For more information check this
+                <a href="https://www.youtube.com/watch?v=VL7Wm0UzY6s">video
+                </a>.
+              </p>
+            </div>
+            <div class="flex_item">
+              <img src="https://d17h27t6h515a5.cloudfront.net/topher/2017/January/58902526_example-doc-structure-ipnd/example-doc-structure-ipnd.png"
+              alt="html_structure" class="html-structure-image">
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2 id="css">Information about CSS</h2>
+      <div class="subsection">
+        <h3 id="css-intro">Introduction to CSS</h3>
+          <dl class="in-one-line">
+            <dt>DOM</dt>
+            <dd> Document Object Model. When programmers talk about the "DOM"
+              they are talking about the tree-like structure of a page. DOM is
+              a cross-platform and language-independent convention for
+              representing and interacting with objects in HTML (and other
+              markup languages).
+            </dd>
+            <dd>The nodes of every document are organized in a tree structure,
+              called the DOM tree. Each HTML tag creates an element in the DOM
+              that the browser uses to display the page. The HTML document can
+              provide the browser with information on what style to use and
+              where to get it.
+            </dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets. CSS is a style sheet language used for
+              describing the look and formatting of a document written in a
+              markup language.
+            </dd>
+            <dd>CSS have specific syntax and rules to change how elements will
+              look on the page. For example: the size of the font, the
+              background, color.
+            </dd>
+        </dl>
+        <h3 id="css-understanding">Understanding CSS</h3>
+          <p>You can also think about CSS as a search and replace tool: you
+            identify a class or a tag of the element you want to find (or
+            match, in CSS terminology), and then what you want to do with it,
+            or what property values to replace with different ones.
+          </p>
+          <p>"Cascading" means that rules are applied not only to the elements
+            they directly match, but also to all of those elements child. If a
+            child element has multiple, overlapping rules defined for it, the
+            more specific rule takes effect.
+          </p>
+        <h3 id="css-use">How to use CSS?</h3>
+          <h6>It also matters where you define the rules and in what order they
+            are applied. Styles can be defined in different places and are
+            applied in the following order, with definitions further down the
+            list overwriting previous definitions:
+          </h6>
+          <ul>
+            <li>the default style of a browser (different browsers have
+              slightly different styles)</li>
+            <li>stylesheet in a separate CSS file (external, best way)</li>
+            <li>stylesheet inside HTML (internal, not ideal) </li>
+            <li>style in an element (inline, should be avoided)</li>
+          </ul>
+          <p>We can use <span class="pink">!important</span>. !important always
+            will be first independently of other rules.</p>
+          <p>Example: <b>outline: 1px solid red !important</b></p>
+          <div class="flex">
+            <div class="flex_item">
+              <p>
+                <span class="pink">Write your style inline with your HTML.
+                </span>
+              </p>
+              <p>This is generally a very bad idea because it leads to lots of
+                repeated code but it's good to be familiar with it.</p>
+              <p>With this method, you modify the style attributes of every
+                individual HTML element.</p>
+            </div>
+            <div class="flex_item">
+              <div class="image">
+                <img src="images/css_inline.png" alt="inline css">
+                <span class="caption">Inline style.</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="flex_item">
+              <img src="images/css_internal.png" alt="internal css">
+              <span class="caption">Internal style.</span>
+            </div>
+            <div class="flex_item">
+              <p>
+                <span class="pink">Write CSS in the &lt;head&gt; of your HTML.
+                </span>
+              </p>
+              <p>At the top of your HTML document, add a &lt;head&gt; element.
+              </p>
+              <p>Inside the &lt;head&gt; element, add a &lt;style&gt; element.
+              </p>
+              <p>Write your CSS in the &lt;style&gt; element and then put the
+                HTML for the rest of your page below.</p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="flex_item">
+              <p>
+                <span class="pink">Link your HTML to a separate CSS file.
+                </span>
+              </p>
+              <p>It lets you stay more organized when working on larger
+                projects.</p>
+              <p>Put all of your CSS code in a separate file (let's call it
+                external.css). Write all of your structural HTML in separate
+                file (let's call it external.html).
+              </p>
+              <p>Add a &lt;head&gt; element to the top of your HTML. and add a
+                &lt;link&gt; tag inside this element.</p>
+              <p>&lt;link&gt; is a "void tag" you don't need to add a closing
+                tag. Add the following attributes to your &lt;link&gt;:<p>
+              <p>rel="stylesheet"</p>
+              <p>href="external.css"</p>
+            </div>
+            <div class="flex_item">
+              <div class="image">
+                <img src="images/css_external.png" alt="external css">
+                <span class="caption">External style.</span>
+              </div>
+            </div>
+          </div>
+        <h3 id="css-vocabulary">CSS vocabulary</h3>
+          <div>
+            <dl class="box">
+              <dt>CSS</dt>
+              <dd>Cascading Style Sheets</dd>
+              <dt>Rule</dt>
+              <dd>a line of CSS code describing the value that a certain
+                attribute should take.</dd>
+              <dt>Property</dt>
+              <dd>the property which will be changed.</dd>
+              <dt>Value</dt>
+              <dd>the value which will be assigned to the attribute.</dd>
+              <dt>Selector</dt>
+              <dd>the name that used to in order to target the elements that
+                are assigned to a class or ID attribute in the HTML.</dd>
+              <dt>Class</dt>
+              <dd>a class refers to a group of elements that can be styled
+                together. Class names should not contain puntuation marks such
+                as class="1.1"
+              </dd>
+              <dt>ID</dt>
+              <dd>are unique identifiers that uniquely identifies an element in
+                HTML.</dd>
+            </dl>
+          </div>
+          <div class="image">
+            <img src="images/css_rule.png" alt="css rule">
+            <span class="caption">How to write css rule.</span>
+          </div>
+        <h3 id="box-sizing">Box sizing</h3>
+          <p>Everyting on a web page is a box.</p>
+          <h6>There are four main points about box sizing:</h6>
+          <ol type="1">
+            <li>HTML elements are boxes and each box has 4 components.</li>
+            <li> It can often be hard to get the size of a box just right,
+              because there are so many components to each box.</li>
+            <li>There are two techniques to use to help deal with sizing
+              issues:
+              <ol type="a">
+                <li>Set sizes in terms of percentages rather than pixels.</li>
+                <li>Set the box-sizing attribute to border-box for every
+                  element.</li>
+              </ol>
+            </li>
+            <li>Different browsers work slightly differently. Sometimes this
+              causes different browsers to display the same code differently.
+            </li>
+          </ol>
+          <p>Four components of box are: margin, border, padding and content.
+          </p>
+          <h6>More about box-sizing:</h6>
+          <dl class="box">
+            <dt>box-sizing:  content-box OR border-box</dt>
+            <dd>content-box is default. The width and height includes ONLY
+              content.<br> border-box - The width and height includes content,
+              padding and border WITHOUT margin
+            </dd>
+          </dl>
+          <h6>Browsers have diffrent styles, so is important to use
+            browser-specific prefixes:</h6>
+          <ul style="list-style-type:none">
+            <li>-webkit-box-sizing: border-box (webkit for Google Chrome,
+              Safari and Opera)</li>
+            <li>-moz-box-sizing: border-box (moz for Mozilla Firefox)</li>
+            <li>-ms-box-sizing: border-box (ms for Microsoft Internet Explorer)
+            </li>
+          </ul>
+        <h3 id="box-positioning">Box positioning</h3>
+          <ol type="1">
+            <li>Divs are block elements (as opposed to inline), so by default
+              they take up the entire width of a page.</li>
+            <li>Adding the rule <b>display: flex;</b> to the appropriate CSS
+              will override this behavior and let divs appear next to each
+              other.
+            </li>
+          </ol>
+          <p><span class="pink">Flexible Box Layout module, flex items in
+            flex container.</span></p>
+          <p>Great guide to flexbox here:
+            <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+              flexbox</a>
+          </p>
+          <h6>Properties for the Parent(.container):</h6>
+          <ul>
+            <li>{display: flex;} the shorthand for flex-grow, flex-shrink and
+              flex-basis</li>
+            <li>{flex-directon: row | row-reverse | column | column-reverse;}
+            </li>
+            <li>{flex-wrap: nowrap | wrap | wrap-reverse;}</li>
+            <li>{justify-content:  flex-start | flex-end | center |
+              space-between | space-around}</li>
+            <li>{align-items: flex-start | flex-end | center | baseline |
+              stretch;}</li>
+            <li>{align-content: flex-start | flex-end | center | space-between
+              | space-around | stretch;}</li>
+          </ul>
+          <h6>Properties for the Children (.item):</h6>
+          <ul>
+            <li>{order: &lt;integer&gt;}</li>
+            <li>{flex-grow: &lt;number&gt;; /* default 0 */ }</li>
+            <li>{flex-shrink: &lt;number&gt;; /* default 1 */ }</li>
+            <li>{flex-basis: &lt;lenght&gt; | auto; /* default auto */}</li>
+            <li>{align-self: auto | flex-start | flex-end | center | baseline
+              | stretch}</li>
+          </ul>
+        <h3 id="veryfying">Verifying HTML and CSS</h3>
+          <p>It is important to write correct HTML and CSS file. HTML and CSS
+            should complies with standards.</p>
+          <p>Incorrect can display okay in one browser, but incorrectly in
+            another.</p>
+          <p>There are icons which can be shown on a web page.
+          This icons shows that the page complies with standards.</p>
+          <p>To verify HTML use:
+            <a href="https://validator.w3.org/#validate_by_input">HTML</a>
+          </p>
+          <p>To verify CSS use:
+            <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">
+              CSS</a>
+          </p>
+      </div>
+    </div>
+    <div class="from-author">
+      <p>Thank you for visiting my website.</p>
+      <p>I've taken care to create interoperable Webpage which complies with
+        standards.</p>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Poprawny CSS!"/>
+        </a>
+      </p>
+    </div>
+    <p><a href="#top">Go back to the top.</a></p>
+    <footer>
+      <p>Copyright &copy; 20017 Justyna Tekieli</p>
+    </footer>
+  </body>
+</html>
